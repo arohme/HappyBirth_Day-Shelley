@@ -2,7 +2,7 @@ function revealMessage() {
     document.getElementById('message').classList.toggle('hidden');
 }
 
-const targetDate = new Date('June 19, 2024 13:27:00').getTime();
+const targetDate = new Date('June 19, 2024 13:34:00').getTime();
 const countdownContainer = document.getElementById('countdown-container');
 const countdownTimer = document.getElementById('countdown-timer');
 const content = document.getElementById('content');
@@ -31,7 +31,7 @@ updateCountdown();
 
 function playBackgroundMusic() {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-   const audioElement = new Audio('birthday.mp3');
+   const audioElement = new Audio('birthday1.mp3');
     const track = audioContext.createMediaElementSource(audioElement);
     const gainNode = audioContext.createGain();
     gainNode.gain.value = 2; // Increase the volume
