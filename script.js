@@ -2,7 +2,7 @@ function revealMessage() {
     document.getElementById('message').classList.toggle('hidden');
 }
 
-const targetDate = new Date('June 20, 2024 1:05:00').getTime();
+const targetDate = new Date('June 20, 2024 01:05:00').getTime();
 const countdownContainer = document.getElementById('countdown-container');
 const countdownTimer = document.getElementById('countdown-timer');
 const content = document.getElementById('content');
