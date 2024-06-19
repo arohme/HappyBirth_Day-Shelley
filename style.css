@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Ensure the body takes at least the viewport height */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px; /* Limit maximum width of content */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Add space above the container */
+}
+
+.banner {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image {
+    position: relative;
+    flex: 1 1 calc(20% - 20px); /* Adjusted width calculation for smaller images */
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 200px; /* Limit maximum width of images */
+    cursor: pointer;
+}
+
+.image img {
+    width: 100%;
+    height: auto; /* Ensure images maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
+.message-section {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add space below the message section */
+}
+
+.shayari {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #f5576c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #f093fb;
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
+
+.countdown-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('countdown-bg.jpg') no-repeat center center/cover;
+}
+
+.countdown-content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    animation: fadeIn 2s;
+}
+
+.countdown-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#countdown-timer {
+    font-size: 2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+.jumping-text {
+    position: absolute;
+    color: #f5576c; /* Pink color */
+    font-size: 1.5em;
+    font-weight: bold;
+    animation: jump 2s infinite ease-in-out;
+}
+
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* Example: Hide the entire body */
+ 
+
+
+
+
+
+
+
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image {
+    position: relative;
+    flex: 1 1 auto; /* Allow images to resize based on their content */
+    box-sizing: border-box;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.image img {
+    max-width: 100%; /* Ensure images don't exceed their original width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+}
+
+.image:hover .overlay {
+    opacity: 1;
+}
+
