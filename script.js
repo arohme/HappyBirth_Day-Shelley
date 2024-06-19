@@ -31,7 +31,7 @@ updateCountdown();
 
 function playBackgroundMusic() {
     const audioContext = new (window.AudioContext || window.webkitAudioContext)();
-   const audioElement = new Audio('🎂🍰Birthday Song _ happy birthday Song _ Best Birthday Whatsapp Status_ 50K VIEWS _BIRTHDAY STATUS 🍰🎂.mp3');
+   const audioElement = new Audio('birthday.mp3');
     const track = audioContext.createMediaElementSource(audioElement);
     const gainNode = audioContext.createGain();
     gainNode.gain.value = 2; // Increase the volume
