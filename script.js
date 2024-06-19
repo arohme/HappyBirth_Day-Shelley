@@ -2,7 +2,7 @@ function revealMessage() {
     document.getElementById('message').classList.toggle('hidden');
 }
 
-const targetDate = new Date('June 19, 2024 1:03:00').getTime();
+const targetDate = new Date('June 20, 2024 1:05:00').getTime();
 const countdownContainer = document.getElementById('countdown-container');
 const countdownTimer = document.getElementById('countdown-timer');
 const content = document.getElementById('content');
@@ -147,3 +147,16 @@ function createGallery() {
 
 // Call the function to create the gallery on page load
 createGallery();
+
+
+function refreshPage() {
+    setTimeout(() => {
+        location.reload(); // Reload the current page
+    }, 30000); // 30 seconds in milliseconds (30,000 milliseconds)
+}
+
+// Call the function to create the gallery on page load
+ 
+
+// Call the function to refresh the page every 30 seconds
+refreshPage();
